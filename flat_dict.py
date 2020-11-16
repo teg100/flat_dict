@@ -1,5 +1,10 @@
 
 def flatten(d):
+    """
+    Replaces any multilevel dictionary with a flat one.
+
+    Return flat dictionary.
+    """
     res = {}
     for item in d:
         if isinstance(d[item], dict):
